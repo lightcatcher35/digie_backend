@@ -37,10 +37,10 @@ export const ServiceTypeDefs = gql`
   }
   
   type Mutation {
-    addChar(name: String!, location: String,image:String):SingleResult
+    addChar(name: String!, location: String!,image:String!):SingleResult
   }  
   type Mutation {
-    updateChar(id:Int!, name: String!, location: String,image:String):SingleResult
+    updateChar(id:Int!, name: String!, location: String!,image:String!):SingleResult
   }
   type Mutation {
     removeChar(id:Int!):QueryResult

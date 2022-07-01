@@ -1,7 +1,7 @@
 import { ApolloError } from "apollo-server-express";
 import mockerFile from "./../ricky-and-morty.json";
 
-import { AddressedName,charInterface } from "./types/char";
+import { charInterface } from "./types/char";
 let dumpItems = [...mockerFile];
 
 const mapChar = (charObject: charInterface) => {
